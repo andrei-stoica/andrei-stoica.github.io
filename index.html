@@ -2,11 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title> Andrei Stoica</title>
+	<title> Andrei Stoica: Data Engineer with a passion for games</title>
 	
-	<meta name="description" content="Personal Site">
-	<meta name="keywords" content="">
-	
+
+<meta name="description" content="This personal site is under reconstructionThere is a lot of content missing/changing at the moment. Check back later.">
+
+<meta property="og:description" content="This personal site is under reconstructionThere is a lot of content missing/changing at the moment. Check back later.">
+
+<meta property="og:url" content="https://andreistoica.ca/" />
+<meta property="og:title" content="Data Engineer with a passion for games" />
+<meta property="og:type" content="article" />
+
 	<link rel="canonical" href="https://andreistoica.ca/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -39,6 +45,11 @@
 				
 				<li
 				>
+				<a href="/pages/gamedev/">Game dev</a>
+				</li>
+				
+				<li
+				>
 				<a href="/pages/resume/">Resume</a>
 				</li>
 				
@@ -53,105 +64,16 @@
 		<div class="col-lg-10">
 			<div id="content">
 				
-<div id="post">
-    <div class="post-header">
-    <div id="post-meta" class="row">
-        <div class="col-lg-6">June 20, 2023</div>
-        
+<div id="custom-page">
+    <div id="page-header">
+        <h2>Data Engineer with a passion for games</h2>
     </div>
-    <h2>Rust has a lot to teach other languages</h2>
-</div>
-<div>
     
-    <p>Recently, I decided to pick up Rust. While I'm not yet 100% comfortable with the
-language, I have had one major takeaway from the experience. The new developer
-experience for all other languages is trash!</p><p>We all know the saying "Necessity is the mother of invention", but man does it
-ever ring true here. It's clear! Rust being as hard as it is to learn
-forced that team to create the best possible introduction to it. When you go to
-the <a href="https://www.rust-lang.org/">Rust-Lang</a> website there are three ways to get
-started under the <a href="https://www.rust-lang.org/learn">learning</a> tab.</p><p>First, there is <a href="https://doc.rust-lang.org/book/">"Read the book"</a>.
-There are plenty of books that serve as introductions to programming languages.
-This isn't the interesting part. However, I did find this well written with good
-example code and I do recommend people at least skim this and probably use it as
-a supplement to the other learning methods I will mention later.</p><p>Next is the <a href="https://github.com/rust-lang/rustlings/">"Rustlings"</a> course.
-Here is where it gets interesting. This is an interactive course where you are
-given a program that doesn't compile and you need to determine how to fix it.
-There are exercises for starting with variables and control flow and going all
-the way up to error handling, generics and unique rust features like traits and
-lifetimes.</p><p>To run through the exercises you can clone the repo and install it with Rust's
-package manager. Then running <code>rustlings watch</code> will automatically compile the
-exercise code and run it for you. Each exercise has a line that you will need to
-remove to move on to the next exercise. This can allow you to play around with
-different solutions once you have completed an exercise.</p><p>I found this sort of compiler-driven teaching style very effective at getting me
-familiar with not only the language itself but also the compiler and the
-resources to reference when I encounter other problems down the line. When you
-are stuck, the course has a help command that you can run. This will point you
-to the correct resource for that exercise. Additionally, there is a readme that
-links each of the sections of the course to the accompanying section in the book.</p><p>The last option they offer for getting started is "Rust by Example". Here there
-are listing with example code for many different tasks. Again this could be
-anything from a simple hello world to the complicated rust specific features
-like traits and lifetimes. But it also contains testing and examples from the
-standard library. This will be a more useful resource later when trying to use
-the standard library and building some larger projects.</p><p>In my opinion, the real star of the show here is <strong>Rustlings</strong>. The fact that it
-forces you to install and familiarize yourself with the tool you will be using
-from day 0 is beautiful. While there are books that walk you through all of the
-same things for other languages and similar courses online are available, this
-is the first time I've seen something like this from the developers of the
-language itself. Additionally, this is all freely available on GitHub and their
-website.</p><p>When you're done with the course and need to dive deeper they also have links on
-that same page for:</p><ul><li>standard library</li><li>differences between editions</li><li>package manager</li><li>documenting your code</li><li>the compiler</li></ul><p>as well as application specific books:</p><ul><li>command line application</li><li>webassembly</li><li>embedded programming</li></ul><p>Again all of this is <strong>FREE</strong> on the language's website. This is not only a great
-beginner introduction but it also gives you great ideas for projects to boost
-your proficiency after you get your footing.</p><p>In 2023, it's nice to see a language taking the newcomer experience so seriously
-and thinking about the path to proficiency. I think this sort of system for
-learning would benefit other languages and would love to see it mirrored.</p><p>I think most people would agree that Clojure is another modern language that can
-be difficult to learn. Despite it being similarly difficult, the newcomer
-experience is nowhere near as nice. One thing both of these share is the ability
-to use the language right in the browser. That's nice but it still doesn't get
-you familiar with the rest of the ecosystem and the compiler. If you even want a
-tool to help manage the dependencies of your project, you'll have to find your
-way to <a href="https://leiningen.org/">Leiningen</a> on your own somehow. Now let's look
-at how the Clojure maintainers expect a new person to learn. Under the
-<a href="https://clojure.org/guides/getting_started#_how_do_i_learn_the_language">"How do I learn the language"</a>
-section, there is a basic written guide introducing you to the language akin to
-the book that Rust provides. Next, there are 4 books that you can pay money for.
-A set of problems you can solve interactive in the browser. There is a course
-you can sign up for that also has mentors.</p><p>I'm not saying these are bad options to start on a new language. For those
-who prefer learning from books, I'm sure it works. For those who can afford to
-buy the books, I'm sure it works. But for students, for those between jobs, the
-fact that Rust offers such a comprehensive view of the ecosystem for free is
-fantastic.</p><p>I find that following examples from a book doesn't put me in the same
-exploratory mind space as the Rustlings course did. With a book in front of you,
-the answer is always there as well. Further down the page or on the following
-one. All you need to do is keep reading. With the course, you need to explore
-to find the solution. When you find it, you're already thinking of other
-possible solutions. This encourages you to keep thinking. Running the help
-command points you to the right answer but doesn't hand it to you. It still
-forces you to process and understand the documentation The fact that you need
-to swap your attention from the editor to a browser means that you are less
-likely to do it since it requires a context switch. With the book method, you
-are already encouraged to switch back and forth so it's no big deal to do it
-one more time.</p><p>If you haven't done so already, check out the
-<a href="https://www.rust-lang.org/learn">Learn</a> page of the Rust website. It is a
-lesson in making that is notoriously difficult accessible. Other languages,
-new and old, should take a lesson from their playbook.</p>
-</div>
-
-<div id="post-tags">
-    <b>Tags: </b>
-    
-    <a href="/tags/learning/">learning</a>
-    
-    <a href="/tags/rust/">rust</a>
-    
-</div>
-
-
-    
+    <p><em><strong>This personal site is under reconstruction</strong></em></p><p>There is a lot of content missing/changing at the moment. Check back later.</p>
 
     <div id="prev-next">
         
         
-        <a class="right" href="/posts/2021-07-23-Welcome/">Welcome &raquo;</a>
         
     </div>
 </div>
@@ -173,6 +95,8 @@ new and old, should take a lesson from their playbook.</p>
                     <h3>Recent Posts</h3>
                     <ul>
                         
+                        <li><a href="/posts/2024-03-10-personal-task-managment/">Personal Task Managment</a></li>
+                        
                         <li><a href="/posts/2023-06-20-Rustlings-takeaway/">Rust has a lot to teach other languages</a></li>
                         
                         <li><a href="/posts/2021-07-23-Welcome/">Welcome</a></li>
@@ -187,6 +111,10 @@ new and old, should take a lesson from their playbook.</p>
                         
                         <li><a href="/tags/learning/">learning</a></li>
                         
+                        <li><a href="/tags/task/">task</a></li>
+                        
+                        <li><a href="/tags/todo/">todo</a></li>
+                        
                         <li><a href="/tags/rust/">rust</a></li>
                         
                         <li><a href="/tags/welcome/">welcome</a></li>
@@ -199,7 +127,7 @@ new and old, should take a lesson from their playbook.</p>
 	</div>
 </div>
 
-	<footer>Copyright &copy; 2023 Andrei Stoica
+	<footer>Copyright &copy; 2025 Andrei Stoica
 		<p style="text-align: center">Powered by <a href="http://cryogenweb.org">Cryogen</a></p>
 	</footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
