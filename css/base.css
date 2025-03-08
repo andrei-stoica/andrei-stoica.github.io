@@ -2,12 +2,15 @@ body {
 	font-family: Ubuntu;
 	background-color: #2e2e2e;
 	color: #817a71;
+	padding-bottom: 1rem;
 }
+
 .navbar {
 	background-color: #2e2e2e;
 	border: 0;
 	color: #89837a;
 }
+
 .navbar-header {
 	width: 100%;
 	padding: 2rem;
@@ -41,7 +44,8 @@ body {
 	margin-top: 1rem;
 	margin-left: 3rem;
 }
-.desc > div {
+
+.desc>div {
 	display: list-item;
 	padding-bottom: 0.5rem;
 }
@@ -51,29 +55,30 @@ body {
 	line-height: unset;
 	max-width: 75%;
 }
+
 .navbar-default .navbar-collapse {
 	padding: 0;
 	border-color: #3d3e3e;
 }
 
-.nav-tabs.nav-justified > li > a {
+.nav-tabs.nav-justified>li>a {
 	border-radius: 8px 8px 0 0;
 	border-bottom-color: #3d3e3e;
 	color: #908b82;
 }
 
-.nav-tabs.nav-justified > li > a:hover {
+.nav-tabs.nav-justified>li>a:hover {
 	border-color: #3d3e3e;
 	background-color: transparent;
 }
 
-.nav-tabs.nav-justified > li.active > a {
+.nav-tabs.nav-justified>li.active>a {
 	border-color: #3d3e3e;
 	background-color: #252525;
 	color: #908b82;
 }
 
-.nav-tabs.nav-justified > li.active > a:hover {
+.nav-tabs.nav-justified>li.active>a:hover {
 	border-color: #494949;
 	border-bottom-color: #3d3e3e;
 }
@@ -90,7 +95,8 @@ body {
 #sidebar ul#links {
 	padding: 0;
 }
-li > a > img {
+
+li>a>img {
 	filter: invert(50%);
 	height: 3rem;
 	aspect-ratio: auto;
@@ -98,7 +104,7 @@ li > a > img {
 
 code {
 	color: #7a7771;
-	background-color: #292a29; 
+	background-color: #292a29;
 }
 
 pre {
@@ -116,13 +122,16 @@ footer {
 	.navbar {
 		min-height: 80px;
 	}
+
 	.navbar-nav>li>a {
 		font-size: 2rem;
 		padding: 3rem 1.5rem;
 	}
+
 	.navbar-default .navbar-brand {
 		font-size: 6rem;
 	}
+
 	#content {
 		margin-top: 1rem;
 		padding: 1rem;
@@ -152,7 +161,8 @@ footer {
 		margin-top: 3rem;
 		vertical-align: middle;
 	}
-	.nav-tabs.nav-justified > li > a {
+
+	.nav-tabs.nav-justified>li>a {
 		border-radius: 0;
 		color: #908b82;
 		margin-bottom: 0;
@@ -162,12 +172,12 @@ footer {
 		height: 100%;
 	}
 
-	.nav-tabs.nav-justified > li > a:hover {
+	.nav-tabs.nav-justified>li>a:hover {
 		border-color: #3d3e3e;
 		background-color: transparent;
 	}
 
-	.nav-tabs.nav-justified > li.active > a {
+	.nav-tabs.nav-justified>li.active>a {
 		border-color: #3d3e3e;
 		background-color: #252525;
 		color: #908b82;
